@@ -32,7 +32,7 @@ const Header = () => {
           </svg>
         </button>
         <div className="px-2 flex relative">
-          <div className="px-3 absolute top-0 items-center justify-center flex h-full">
+          <button className="px-3 absolute top-0 items-center justify-center flex h-full">
             <svg
               data-encore-id="icon"
               role="img"
@@ -44,13 +44,36 @@ const Header = () => {
             >
               <path d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z"></path>
             </svg>
-          </div>
+          </button>
           <input
             type="text"
-            placeholder=""
-            className="w-[474px] py-3 pl-12 pr-16 bg-slate-600 rounded-[500px] "
+            placeholder="What do you want to play?"
+            className="w-[474px] py-3 pl-12 pr-16 bg-slate-600 rounded-[500px] outline-none text-white placeholder:text-white"
           />
+          <button className="pl-3 pr-1 border-gray-300 border-l absolute right-3 top-1/4">
+            <svg
+              data-encore-id="icon"
+              role="img"
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              strokeWidth={2}
+              fill="none"
+              stroke="white"
+            >
+              <path d="M4 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4H4V2zM1.513 9.37A1 1 0 0 1 2.291 9H21.71a1 1 0 0 1 .978 1.208l-2.17 10.208A2 2 0 0 1 18.562 22H5.438a2 2 0 0 1-1.956-1.584l-2.17-10.208a1 1 0 0 1 .201-.837zM12 17.834c1.933 0 3.5-1.044 3.5-2.333 0-1.289-1.567-2.333-3.5-2.333S8.5 14.21 8.5 15.5c0 1.289 1.567 2.333 3.5 2.333z"></path>
+            </svg>
+          </button>
         </div>
+      </div>
+      <div>
+        <button className="text-white py-2 pl-2 pr-8 font-bold leading-8">
+          Sign up
+        </button>
+        <button className="bg-white leading-8 px-8 py-2 rounded-full font-bold">
+          Log in
+        </button>
       </div>
     </div>
   );
